@@ -21,11 +21,6 @@ void preorder( Node *root){
 
         return;
     }
-//    arr[pos] = root->data;
-//    cout<<root->data;
-//    cout<<pos<<endl;
-//    pos++;
-
     cout<<root->data;
 
     preorder(root->left);
@@ -62,18 +57,11 @@ int main()
     (root->left)->left = new Node(4);
     (root->left)->right = new Node(5);
 
-//    int arr[5] = {0};
-
     preorder(root);
     cout<<endl;
     inorder(root);
     cout<<endl;
     postorder(root);
-
-//    for(int i=0; i<5; i++){
-//
-//        cout<<arr[i]<<" ";
-//    }
 
     return 0;
 }
