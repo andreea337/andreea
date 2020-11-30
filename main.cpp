@@ -10,7 +10,6 @@ void sortOddEven(int arr[]){
 
     while(tmp<=tail){
 
-        //cout<<"e"<<endl;
         if(arr[tmp]%2==1){ //odd
 
             tmp++;
@@ -19,8 +18,6 @@ void sortOddEven(int arr[]){
         else{ //even
 
             swap(arr[tmp],arr[tail]);
-
-            //cout<<"swap";
 
             tail--;
         }
